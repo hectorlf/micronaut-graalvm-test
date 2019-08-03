@@ -13,7 +13,8 @@ group "com.hectorlopezfernandez"
 
 repositories {
     mavenCentral()
-    maven { url "https://jcenter.bintray.com" }
+    maven { url 'https://jcenter.bintray.com' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 dependencyManagement {
@@ -30,6 +31,7 @@ configurations {
 dependencies {
     annotationProcessor "io.micronaut:micronaut-inject-java"
     annotationProcessor "io.micronaut:micronaut-validation"
+
     compile "io.micronaut:micronaut-security-session"
     compile "io.micronaut:micronaut-http-client"
     compile "io.micronaut.configuration:micronaut-jdbc-hikari"
@@ -40,6 +42,7 @@ dependencies {
     compile "io.micronaut.configuration:micronaut-jdbc-tomcat"
     compile "io.micronaut:micronaut-http-server-netty"
     compile 'io.micronaut:micronaut-views'
+    compile 'com.hectorlopezfernandez.pebble:micronaut:1.0.0-SNAPSHOT'
     compile 'io.pebbletemplates:pebble:3.0.10'
     runtime "ch.qos.logback:logback-classic:1.2.3"
     runtime "com.h2database:h2"

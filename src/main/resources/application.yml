@@ -20,3 +20,8 @@ micronaut:
 ---
 mongodb:
   uri: "mongodb://${MONGO_HOST:localhost}:${MONGO_PORT:27017}"
+
+  
+---
+pebble:
+  locale: en
