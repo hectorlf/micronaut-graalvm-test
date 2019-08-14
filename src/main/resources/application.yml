@@ -2,6 +2,14 @@
 micronaut:
   application:
     name: micronaut-test
+  server:
+    netty:
+      worker:
+        threads: 1
+  executors:
+    io:
+      type: fixed
+      nThreads: 50
 
 ---
 micronaut:
